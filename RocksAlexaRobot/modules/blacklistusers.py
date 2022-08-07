@@ -1,8 +1,4 @@
-# Module to blacklist users and prevent them from using commands by @Dr_Asad_Ali
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad + Harshit
+
 
 
 import html
@@ -164,5 +160,5 @@ dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
 dispatcher.add_handler(BLUSERS_HANDLER)
 
-__mod_name__ = "🚧 ʙʟᴀᴄᴋʟɪsᴛɪɴɢ ᴜsᴇʀs"
+__mod_name__ = "BL-Users"
 __handlers__ = [BL_HANDLER, UNBL_HANDLER, BLUSERS_HANDLER]
