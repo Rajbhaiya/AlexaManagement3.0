@@ -23,7 +23,7 @@ from RocksAlexaRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from RocksAlexaRobot.modules.helper_funcs.extraction import extract_user
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-GN_IMG= "https://telegra.ph/file/52eb0e2a082550fad027a.jpg"
+GN_IMG= "https://telegra.ph/file/96fbfc4e8ae3028c5ff63.jpg"
 DECIDE_IMG= "https://telegra.ph/file/313cfbc4056bd3b5cd995.jpg"
 JUDGE_IMG= "https://telegra.ph/file/a2ebfdd262def30ad42a7.jpg"
 
@@ -36,7 +36,7 @@ def goodnight(update, context):
     reply = f"*Hey {escape_markdown(first_name)} \nGood Night! 😴*"
     message.reply_photo(GN_IMG,reply, parse_mode=ParseMode.MARKDOWN)
 
-GM_IMG= "https://telegra.ph/file/9e008ed4dc87b7d155a59.jpg"
+GM_IMG= "https://telegra.ph/file/24b5aba6f58fcb02f903e.jpg"
 @run_async
 @typing_action
 def goodmorning(update, context):
@@ -44,17 +44,6 @@ def goodmorning(update, context):
     first_name = update.effective_user.first_name
     reply = f"*Hey {escape_markdown(first_name)} \n Good Morning!☀*"
     message.reply_photo(GM_IMG,reply, parse_mode=ParseMode.MARKDOWN)
-    
-ASD_IMG= "https://telegra.ph/file/de8bd6a3cf61e06679f1e.jpg"
-@run_async
-@typing_action
-def asadali(update, context):
-    message = update.effective_message
-    first_name = update.effective_user.first_name
-    disable_web_page_preview=True,
-    reply = f"✪ ʜɪ ɪᴛ ɪs ᴍᴇ ᴀsᴀᴅ ᴀʟɪ ᴀʟᴇxᴀ ᴏᴡɴᴇʀ\n────────────────────────\n✪ {escape_markdown(first_name)} ᴅᴏsᴛ 🥰 ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ\n────────────────────────\n✪ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍᴇ ᴠɪsɪᴛ ᴛʜɪs [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/Dr_Asad_Ali) 🥰\n────────────────────────\n✪ ──『ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ』"
-    message.reply_photo(ASD_IMG,reply, parse_mode=ParseMode.MARKDOWN)
-    
 @run_async
 def gbun(update, context):
     user = update.effective_user
@@ -106,7 +95,7 @@ def judge(update, context):
       
       
 @run_async
-def alexa(update, context):
+def naomi(update, context):
     context.bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
@@ -195,8 +184,8 @@ def slap(update: Update, context: CallbackContext):
     hit = random.choice(fun.HIT)
     throw = random.choice(fun.THROW)
 
-    if update.effective_user.id == 2042185317:
-        temp = "Alexa Owner @AsadSupport Slaps You Noob 😁 {user2}"
+    if update.effective_user.id == : 5591954930
+        temp = "My Owner Slaps You Noob 😁 {user2}"
 
     reply = temp.format(
         user1=user1, user2=user2, item=item, hits=hit, throws=throw)
@@ -256,13 +245,9 @@ def pat(update: Update, context: CallbackContext):
         reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
        
     
-GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|good morning)"), goodmorning, friendly="goodmorning")
-ASADALI_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(asadali|asad)"), asadali, friendly="asadali")
-GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight")
+GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|good morning|gm)"), goodmorning, friendly="goodmorning")
+GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|good night|gn)"), goodnight, friendly="goodnight")
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
-
-REPO_HANDLER = DisableAbleCommandHandler("repo", repo)
-
 GBUN_HANDLER = CommandHandler("gbun", gbun)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 GBAM_HANDLER = CommandHandler("gbam", gbam)
@@ -273,7 +258,7 @@ ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 JUDGE_HANDLER = DisableAbleCommandHandler("judge", judge)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
-ALEXA_HANDLER = DisableAbleCommandHandler("alexa", alexa)
+ALEXA_HANDLER = DisableAbleCommandHandler("naomi", naomi)
 
 dispatcher.add_handler(GOODMORNING_HANDLER)
 dispatcher.add_handler(ASADALI_HANDLER)
@@ -294,9 +279,9 @@ dispatcher.add_handler(DARE_HANDLER)
 
 
 
-__mod_name__ = "💞 ғᴜɴ"
+__mod_name__ = "Fun"
 
 __help__ = """
-=>> *Fun Module all cmd are given below* 🤫
- /alexa, /slap, /decide, /judge, /abuse, /insult, /truth, /dare, /gbam, /pat, /gbun, /repo 😊
+=>> *Fun Module cmds
+ /naomi, /slap, /decide, /judge, /abuse, /insult, /truth, /dare, /gbam, /pat, /gbun
 """
