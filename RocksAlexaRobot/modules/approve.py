@@ -231,8 +231,7 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
-__mod_name__ = "🔏 ᴀᴘᴘʀᴏᴠᴇ"
+__mod_name__ = "Approves"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]
 
-# Roses are red, Violets are blue, A face like yours, Belongs in a zoo
