@@ -8,7 +8,7 @@ from telethon import events
 from RocksAlexaRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from RocksAlexaRobot import telethn as Galaxy
 
-@Galaxy.on(events.NewMessage(pattern="/fakegen$"))
+@Galaxy.on(events.NewMessage(pattern="/fakegen"))
 async def hi(event):
     if event.fwd_from:
         return
@@ -33,7 +33,7 @@ async def hi(event):
     )
 
 
-@Galaxy.on(events.NewMessage(pattern="/picgen$"))
+@Galaxy.on(events.NewMessage(pattern="/picgen"))
 async def _(event):
     if event.fwd_from:
         return
@@ -41,11 +41,11 @@ async def _(event):
         url = "https://thispersondoesnotexist.com/image"
         response = requests.get(url)
         if response.status_code == 200:
-            with open("RocksAlexaRobot.jpg", "wb") as f:
+            with open("naomi.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @Dr_Asad_Ali."
-        fole = "RocksAlexaRobot.jpg"
+        captin = f" powered by [Naomi Robot](t.me/naomi_robot)"
+        fole = "naomi.jpg"
         await Galaxy.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
-        os.system("rm ./alexa.jpg ")
+        os.system("rm ./naomi.jpg ")
