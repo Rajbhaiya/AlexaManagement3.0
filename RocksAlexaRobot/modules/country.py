@@ -111,10 +111,3 @@ Gathered By Emiko Robot ✨.</b>
     )
 
     await event.delete()
-
-__help__ = """
- *Country info fetchers...*
- - `/country` Type country name and get info.
-"""
-
-__mod_name__ = "🇵🇰 ᴄᴏᴜɴᴛʀʏ"
