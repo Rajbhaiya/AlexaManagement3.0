@@ -1,7 +1,3 @@
-"""
-(Copyright to @Dr_Asad_Ali
-Powered by @AsadSupport
-"""
 import html
 import os
 from telegram import ParseMode, Update
@@ -571,6 +567,7 @@ __help__ = """
  • `/unpin`*:* unpins the currently pinned message
  • `/invitelink`*:* gets invitelink
  • `/promote`*:* promotes the user replied to
+ • `/fullpromote`*:* promote a user with full rights
  • `/demote`*:* demotes the user replied to
  • `/title <title here>`*:* sets a custom title for an admin that the bot promoted
  • `/admincache`*:* force refresh the admins list
@@ -580,12 +577,7 @@ __help__ = """
  - /delgpic*:* delete a chat pic.
  - /settitle*:* (text) bot can change chat tilte.
  - /setdesc*:* (text) bot can change chat descrepicion.
- 
- *Delete messages*:
- - /del: deletes the message you replied to
- - /purge: deletes all messages between this and the replied to message.
- - /purge <integer X>: deletes the replied message, and X messages following it if replied to a message.
-"""
+ """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
 
@@ -621,7 +613,7 @@ dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
-__mod_name__ = "👮 ᴀᴅᴍɪɴs"
+__mod_name__ = "Admins"
 __command_list__ = [
     "adminlist", "admins", "invitelink", "promote", "demote", "admincache", "setgpic", "delgpic", "setgtitle", "setdesc"
 ]
