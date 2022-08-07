@@ -1,11 +1,3 @@
-# A Powerful Music And Management Bot
-#Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad Ali + Harshit
-
-
-
 import json
 import re
 import os
@@ -148,11 +140,9 @@ def list_all_chats(update: Update, context: CallbackContext):
 __help__ = """
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
-  
-*Powered by Asad Ali*
 """
 
-__mod_name__ = "🤖 ᴄʜᴀᴛʙᴏᴛ"
+__mod_name__ = "Chatbot"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", kuki )
