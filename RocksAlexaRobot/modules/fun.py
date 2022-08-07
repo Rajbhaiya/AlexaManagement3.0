@@ -184,7 +184,7 @@ def slap(update: Update, context: CallbackContext):
     hit = random.choice(fun.HIT)
     throw = random.choice(fun.THROW)
 
-    if update.effective_user.id == : 5591954930
+    if update.effective_user.id == 5591954930
         temp = "My Owner Slaps You Noob 😁 {user2}"
 
     reply = temp.format(
