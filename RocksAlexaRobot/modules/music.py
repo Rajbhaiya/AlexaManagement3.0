@@ -94,7 +94,7 @@ async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
+        message.chat.id, f"Searching.... Please Wait"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
@@ -134,7 +134,7 @@ async def ytmusic(client, message: Message):
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** [{thum}]({mo}) \n**Requested For :** `{urlissed}` \n**Downloaded At :** @Alexa_Help "
+    capy = f"**Video Name ➠** [{thum}]({mo}) \n**Requested For :** `{urlissed}` \n**Downloaded by: [Naomi Robot](t.me/naomi_robot) "
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -147,7 +147,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From YouTube Music!`",
+            f"Now Uploading",
             file_stark,
         ),
     )
@@ -167,7 +167,7 @@ async def ytmusic(client, message: Message):
         )
         return
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
+        message.chat.id, f"`Searching.... Please Wait"
     )
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
@@ -220,7 +220,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From YouTube Music!`",
+            f"Now Uploading",
             file_stark,
         ),
     )
@@ -244,11 +244,11 @@ async def lyrics_func(_, message):
     await m.edit(f"**LYRICS_TOO_LONG:** [URL]({lyrics})")
 
 
-__mod_name__ = "🎵 sᴏɴɢ"
+__mod_name__ = "Music"
 
 __help__ = """
-=>> *Download audio, video and lyrics* 🤫
- ` /lyric: lyrics download
- ` /music: audio music download
- ` /video: video music download
+=>> *Download audio, video and lyrics*
+ ~ /lyric: lyrics download
+ ~ /music or /song: audio music download
+ ~ /video or /vsong: video music download
 """
