@@ -1,10 +1,3 @@
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad + Harshit
-
-
-
 import time
 import re
 
@@ -375,7 +368,7 @@ def connect_button(update, context):
         connect_chat(update, context)
 
 
-__mod_name__ = "✊ ᴄᴏɴᴛᴀᴄᴛ"
+__mod_name__ = "Connections"
 
 __help__ = """
 Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...
