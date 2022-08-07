@@ -23,7 +23,7 @@ from RocksAlexaRobot.function.dbfunctions import (
 from RocksAlexaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 from RocksAlexaRobot import arq
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|asad|ittu|thx|thanx|thanks|pro|cool|good|👍)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|ittu|thx|thanx|thanks|pro|cool|good|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|noob|weak)$"
 
 
