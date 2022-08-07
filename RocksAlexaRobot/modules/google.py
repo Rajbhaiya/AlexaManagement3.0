@@ -286,7 +286,7 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "🎒 ᴛᴏᴏʟs"
+__mod_name__ = "Tools"
 
 __help__ = """
  ❍ /google <text>*:* Perform a google search
@@ -305,4 +305,8 @@ __help__ = """
 *Telegraph Uploader only upload 3 to 5 mb files*
  ❍ /tm: upload image or GIFs telegraph.
  ❍ /txt: reply to text, text upload in telegraph.
+ 
+ *Time & country information*
+ ❍/time : To know current
+ ❍/country <name of the country> : To know information about that country
 """
