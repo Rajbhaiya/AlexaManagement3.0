@@ -2119,7 +2119,7 @@ def fed_user_help(update: Update, context: CallbackContext):
  • `/frules`*:* See Federation regulations\n""",
         parse_mode=ParseMode.MARKDOWN)
 		   
-__mod_name__ = "💀 ғᴇᴅs"
+__mod_name__ = "Fed Help"
 
 __help__ = """
 Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
