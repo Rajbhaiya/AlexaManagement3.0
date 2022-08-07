@@ -1,10 +1,3 @@
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad + Harshit
-
-
-
 import html
 
 from telegram import (
@@ -139,7 +132,7 @@ def ban(update: Update, context: CallbackContext) -> str:
                 [
                     [
        InlineKeyboardButton(text="❕Unban", callback_data=f"unbanb_unban={user_id}"),
-       InlineKeyboardButton(text="❌ Delete", callback_data="unbanb_del"),
+       InlineKeyboardButton(text="🗑 Delete", callback_data="unbanb_del"),
                     ]
                 ]
             ),
@@ -247,7 +240,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
                         InlineKeyboardButton(
                             text="❕Unban", callback_data=f"unbanb_unban={user_id}"
                         ),
-                        InlineKeyboardButton(text="❌ Delete", callback_data="unbanb_del"),
+                        InlineKeyboardButton(text="🗑 Delete", callback_data="unbanb_del"),
                     ]
                 ]
             ),
@@ -547,7 +540,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(PUNCHME_HANDLER)
 
-__mod_name__ = "📛 ʙᴀɴ/ᴍᴜᴛᴇ"
+__mod_name__ = "Ban/Mute"
 __handlers__ = [
     BAN_HANDLER,
 
