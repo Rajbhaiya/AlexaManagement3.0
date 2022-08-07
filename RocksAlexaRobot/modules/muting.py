@@ -312,5 +312,5 @@ dispatcher.add_handler(UNMUTE_HANDLER)
 dispatcher.add_handler(TEMPMUTE_HANDLER)
 dispatcher.add_handler(UNMUTE_BUTTON_HANDLER)
 
-__mod_name__ = "🤐 ᴍᴜᴛᴇ"
+__mod_name__ = "Mute"
 __handlers__ = [MUTE_HANDLER, UNMUTE_HANDLER, TEMPMUTE_HANDLER]
