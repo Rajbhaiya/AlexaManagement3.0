@@ -459,15 +459,13 @@ async def cb_handler(client: pgram, query: CallbackQuery):
 
 __mod_name__ = "🖼 ᴇᴅɪᴛᴏʀ"
 __help__ = """
-At [Alexa Server](t.me/Give_Me_Heart) have some advanced image editing tools inbuilt
-Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
-  🔹 `/edit [reply to image]`*:* Open the image editor
-  🔹 `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
-  🔹 `/reverse`*:* Does a reverse image search of the media which it was replied to.
-  🔹 `/q`*:*reply for message get sticker type.
-  🔹 `/plet [text]`*:* make ur text sticker.
-  🔹 `/carbon` reply to the message make a carbon
-Usage: Beautify your code using carbon.now.sh
+*Help cmds for image editor modul*:
+
+  » `/edit [reply to image]`*:* Open the image editor
+  » `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+  » `/q`*:*reply for message get sticker type.
+  » `/plet [text]`*:* make ur text sticker.
+  » `/carbon` reply to the message make a carbon
 """
 
 
