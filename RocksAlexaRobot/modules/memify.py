@@ -147,4 +147,4 @@ __help__ = """
  - `/mmf` write on image or sticker.
 """
 
-__mod_name__ = "🤏 ᴍᴇᴍɪғʏ"
+__mod_name__ = "Memify"
