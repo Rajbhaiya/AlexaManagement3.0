@@ -1,14 +1,3 @@
-# A Powerful Music And Management Bot
-# Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad + Harshit
-# Roses are red, Violets are blue, A face like yours, Belongs in a zoo
-
-
-
-
-
 import html
 import re
 
@@ -460,7 +449,7 @@ def __stats__():
     )
 
 
-__mod_name__ = "⛔ ʙʟᴀᴄᴋʟɪꜱᴛꜱ"
+__mod_name__ = "Blacklist"
 
 __help__ = """
 Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
